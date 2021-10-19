@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app border p-4 border-1 rounded shadow">
+        <form lass="search-form" id="search-form">
+          <div class="input-group mb-3">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Enter a city"
+              id="enter-city"
+            />
+            <div class="d-grip gap-2 d-md-block">
+              <button type="submit" class="btn btn-primary">Search</button>
+              <button
+                type="click"
+                class="btn btn-success"
+                id="current-location"
+              >
+                Current Location
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <br />
+
+        <div class="card-body" id="cardCurrentTemp" style="width: 65%">
+          <div class="row row-cols-2 p-2 border shadow">
+            <div class="col" id="currentIcon">
+              <h1>☀</h1>
+              <div class="currentTemp">
+                <span id="temp-value">23</span>
+                <span class="celsius"><a href="#" id="tempC">℃</a></span
+                ><span class="celsius"> |</span
+                ><span class="faren"> <a href="" id="tempF">℉</a></span>
+              </div>
+              <div><h1 id="city">Lisbon</h1></div>
+            </div>
+            <div class="col rhscol" id="tempRange">
+              <br />
+              <div class="temp-range">15℃/25℃</div>
+              <div class="description">Sunny</div>
+              <div class="humidity">Humidity: 0%</div>
+              <div class="wind">Wind: 10km/h</div>
+              <div class="date">Monday 16:00</div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="cardForecast shadow">
+          <div class="row row-cols-6">
+            <div class="col">Monday</div>
+            <div class="col">Tuesday</div>
+            <div class="col">Wednesday</div>
+            <div class="col">Thursday</div>
+            <div class="col">Friday</div>
+            <div class="col">Saturday</div>
+          </div>
+          <div class="row row-cols-6">
+            <div class="col">☀</div>
+            <div class="col">☀</div>
+            <div class="col">☀</div>
+            <div class="col">☀</div>
+            <div class="col">☀</div>
+            <div class="col">☀</div>
+          </div>
+          <div class="row row-cols-6">
+            <div class="col">15℃/25℃</div>
+            <div class="col">15℃/25℃</div>
+            <div class="col">15℃/25℃</div>
+            <div class="col">15℃/25℃</div>
+            <div class="col">15℃/25℃</div>
+            <div class="col">15℃/25℃</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

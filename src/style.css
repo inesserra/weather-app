@@ -1,0 +1,47 @@
+body {
+  padding: 40px;
+  font-family: "PT Mono", monospace;
+}
+
+.weather-app {
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+  );
+}
+
+#cardCurrentTemp {
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  border: none;
+  max-width: 90%;
+  text-align: center;
+}
+.cardForecast {
+  display: block;
+  margin: 0 auto;
+  font-size: 15px;
+  text-align: center;
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+  );
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.rhscol {
+  text-align: right;
+}
+.celsius,
+.faren {
+  font-size: 15px;
+}
+#temp-value {
+  font-size: 35px;
+}
